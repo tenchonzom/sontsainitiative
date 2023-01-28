@@ -56,5 +56,16 @@ li.dropdown {
 }
 
 .contact {
-    background-color: #03ba50;
+}
+
+.message-box {
+    margin: auto;
+    padding: 10px;
+    height: 10%;
+    width: 30%;
+    border-radius: 10px;
+    align-content: center;
+    background-color: #04AA6D;
+    border-style: groove;
+    border-color: black;
 }
