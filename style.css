@@ -107,6 +107,7 @@ li.dropdown {
     padding: 10px;
 }
 
+
 /*volunteer*/
 .volunteer-box {
     float: left;
@@ -249,3 +250,41 @@ textarea {
     height: 30px;
 }
 /*contact*/
+=======
+.wrapper{
+    background: white;
+    width: 1050px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+h2{
+    text-align: center;
+    background-color: white;
+}
+hr{
+    width: 150px;
+    margin: 10px auto;
+}
+.members{
+    display: flex;
+}
+.team-members{
+    margin: 20px;
+}
+.team-members img{
+    width: 280px;
+    background: none;
+    border-radius: 70%;
+}
+
+.name-member1{
+    text-align: center;
+    margin: 10px;
+}
+.desc-member1{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
