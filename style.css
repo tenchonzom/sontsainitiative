@@ -1,13 +1,22 @@
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #A5B83D;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: #A5B83D;
+}
 .header {
-    overflow: auto;
+   overflow: auto;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-text1{
+    text-align: center;
 }
 
 .header a:link, a:visited {
@@ -97,3 +106,146 @@ li.dropdown {
     margin-left: 100px;
     padding: 10px;
 }
+
+/*volunteer*/
+.volunteer-box {
+    float: left;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 10px;
+}
+.mentor-wrapper{
+    background-color: white;
+    width: 1000px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+.mentor{
+    font-size: 1.2rem;
+    padding: 20px;
+    display: block;
+}
+.mentor h4,.mentee h4{
+    text-align: center;
+}
+.mentor button{
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    color: black;
+    min-width: 210px;
+    min-height: 30px;
+
+        top: 400px;
+        margin-left: 735px;
+        position: absolute;
+        z-index: 2; 
+        
+}
+.mentor button:hover{
+    background-color: yellow;
+    transition: 0.4s;
+}
+
+.mentee-wrapper{
+    background-color: white;
+    width: 1000px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+}
+.mentee{
+    font-size: 1.2rem;
+    padding: 20px;
+}
+.mentee button{
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    color: black;
+    min-width: 210px;
+    min-height: 30px;
+
+        top: 620px;
+        margin-left:735px;
+        position: absolute;
+        z-index: 2; 
+        
+}
+.mentee button:hover{
+    background-color: yellow;
+    transition: 0.4s;
+}
+
+
+/*contact*/
+.contact-home-box{
+    float: left;
+    width: 400px;
+    margin-top: 150px;
+    margin-left: 100px;
+    padding: 10px;
+}
+.contact-wrapper{
+    background-color: white;
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    margin-left: 600px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+input[type=text], input[type=email] {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-width: 0.5px;
+    width: 95%;
+}
+textarea {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-width: 0.5px;
+    margin: 20px;
+    width: 90%;
+}
+
+.contact-submit{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.contact-submit:hover{
+    background-color: gray;
+    transition: 0.4s;
+}
+.contact-social img{
+    position: relative;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+/*contact*/
