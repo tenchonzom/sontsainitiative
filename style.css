@@ -250,41 +250,114 @@ textarea {
     height: 30px;
 }
 
-/*contact*/
+/*team*/
 .wrapper{
     background: white;
-    width: 1050px;
-    height: 500px;
+    width: 90%;
+    height: 50%;
     border-radius: 15px;
-    padding: 20px;
+    margin-top: 2rem;
+    margin-left: 5%;
+    padding: 3rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
-}
-h2{
-    text-align: center;
-    background-color: white;
-}
-hr{
-    width: 150px;
-    margin: 10px auto;
-}
-.members{
-    display: flex;
-}
-.team-members{
-    margin: 20px;
-}
-.team-members img{
-    width: 280px;
-    background: none;
-    border-radius: 70%;
+    
+   
 }
 
-.name-member1{
+h2{
     text-align: center;
-    margin: 10px;
+    text-transform: uppercase;
+    text-shadow: 0.1rem 0.1rem 0.15rem rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
 }
-.desc-member1{
-    text-align: center;
-    font-size: 15px;
-    margin: 10px;
+
+
+.hero{
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    
 }
+.card{
+    height: 18rem;
+    width: 13rem;
+    display: inline-block;
+    color: aliceblue;
+    overflow: hidden; 
+    border-radius: 10px;
+    border: 0.15em solid #ffffff;
+    position: relative;
+    box-shadow: 1rem 1rem 1.5rem rgba(0, 0, 0, 0.5);
+
+}
+.pic {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.info{
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    position: absolute;
+    background: rgba(78, 114, 185, 0.242);
+    backdrop-filter: blur(5px);
+    padding: 1rem; 
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ .card:hover .info{
+     bottom: 0;
+     transition: 1.5s;
+ }
+ 
+ .a{
+     text-transform: uppercase;
+     font-weight: 500;
+     font-size: 32px;
+ }
+ 
+ .b{
+     text-transform: capitalize;
+     font-weight: 300;
+     font-size: 26px;
+ }
+
+ .c{
+    word-wrap: break-word;
+    margin-right: 0.5rem;
+ }
+
+ .con{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 5%;
+    width: 100%;
+    height: 5%;
+    
+   
+
+}
+
+.con img{
+    height: 50%;
+    width: 50%;
+}
+
+
+.con img:hover{
+    transform: scale(1.5);
+}
+ 
