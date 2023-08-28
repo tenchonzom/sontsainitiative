@@ -109,45 +109,44 @@ li.dropdown {
 
 /*volunteer*/
 .volunteer-box {
-    float: left;
-    width: 400px;
-    margin-top: 50px;
-    margin-left: 100px;
-    padding: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+.volunteer-box h3, .volunteer-box p{
+    text-align: center;
+    margin: 5px;
 }
 .mentor-wrapper{
     background-color: white;
     width: 1000px;
     height: 200px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
     margin: 20px;
 }
 .mentor{
     font-size: 1.2rem;
     padding: 20px;
-    display: block;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 .mentor h4,.mentee h4{
     text-align: center;
 }
 .mentor button{
-    position: absolute;
-    background-color: transparent;
-    top: 50%;
-    color: white;
-    border-radius: 10px;
-    border-width: 2px;
+    display: grid;
+    align-items: center;
+    background-color: orangered;
+    border-radius: 5px;
+    border-width: 0px;
     color: black;
+    font-size: larger;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
     min-width: 210px;
     min-height: 30px;
-
-        top: 400px;
-        margin-left: 735px;
-        position: absolute;
-        z-index: 2; 
-        
 }
 .mentor button:hover{
     background-color: yellow;
@@ -159,29 +158,27 @@ li.dropdown {
     width: 1000px;
     height: 200px;
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     margin: 20px;
 }
 .mentee{
+    display: grid;
     font-size: 1.2rem;
     padding: 20px;
+    text-align: center;
 }
 .mentee button{
-    position: absolute;
-    background-color: transparent;
-    top: 50%;
-    color: white;
-    border-radius: 10px;
-    border-width: 2px;
+    display: grid;
+    align-items: center;
+    background-color: orangered;
+    border-radius: 5px;
+    border-width: 0px;
     color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: larger;
     min-width: 210px;
     min-height: 30px;
-
-        top: 620px;
-        margin-left:735px;
-        position: absolute;
-        z-index: 2; 
         
 }
 .mentee button:hover{
@@ -192,22 +189,19 @@ li.dropdown {
 
 /*contact*/
 .contact-home-box{
-    float: left;
-    width: 400px;
-    margin-top: 150px;
-    margin-left: 100px;
-    padding: 10px;
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+
 }
 .contact-wrapper{
+    margin-top: 20px;
     background-color: white;
-    width: 500px;
-    height: 600px;
+    width: 700px;
+    height: 480px;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
-    margin-left: 600px;
-    margin-top: 100px;
-    margin-bottom: 20px;
 }
 input[type=text], input[type=email] {
     padding: 10px;
@@ -222,7 +216,8 @@ textarea {
     border-radius: 10px;
     border-width: 0.5px;
     margin: 20px;
-    width: 90%;
+    width: 600px;
+    height: 50px;
 }
 
 .contact-submit{
@@ -241,11 +236,5 @@ textarea {
 .contact-submit:hover{
     background-color: gray;
     transition: 0.4s;
-}
-.contact-social img{
-    position: relative;
-    margin-top: 10px;
-    width: 30px;
-    height: 30px;
 }
 /*contact*/
