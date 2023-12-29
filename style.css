@@ -371,6 +371,9 @@ h2 {
 .footer-bar,
 .footer-logo {
   flex: 0 0 auto;
+  padding: 10px;
+  justify-content: space-between;
+  display: inline;
 }
 
 .footer-bar a {
@@ -379,22 +382,28 @@ h2 {
   font-size: 5px;
 }
 
-/* .footer-bar.left {
-  width: 50%;
-  height: 100px;
+.footer-bar.left {
   float: left;
+  padding-right: 650px;
+  padding-left: 80px;
+}
+
+.footer-bar.after-logo {
+  float: center;
+  padding-right: 350px;
+  padding-left: 300px;
 }
 
 .footer-bar.right {
-  width: 50%;
-  height: 100px;
-  float: center;
-} */
+  padding-left: 1px;
+  float: right;
+}
 
 .footer a {
   text-decoration: none;
   color: white;
   font-size: 10px;
+  padding: 0;
 }
 
 .footer-logo a {
