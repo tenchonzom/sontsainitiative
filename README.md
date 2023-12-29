@@ -1,4 +1,5 @@
 # sontsa-website
+
 Sontsa Initiative's official website
 
 Link to figma prototype: https://www.figma.com/file/6qakSMcAM8vxGMeCJgRNBn/Sontsa-Website-Mockup?node-id=0%3A1&t=HLhCCfWA6qsBD8Nl-1
