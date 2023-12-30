@@ -390,8 +390,8 @@ h2 {
 
 .footer-bar.after-logo {
   float: center;
-  padding-right: 350px;
-  padding-left: 300px;
+  padding-right: 80px;
+  padding-left: 450px;
 }
 
 .footer-bar.right {
@@ -402,7 +402,7 @@ h2 {
 .footer a {
   text-decoration: none;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   padding: 0;
 }
 
