@@ -358,20 +358,18 @@ h2 {
 
 .footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   position: fixed;
+  margin-top: 15px;
+  width: 100vw;
   bottom: 0;
+  text-align: center;
   background-color: #525136;
   color: white;
-  padding-bottom: 1%;
+  padding: 30px;
 }
 
 .footer-bar,
 .footer-logo {
-  flex: 0 0 auto;
-  padding: 10px;
   justify-content: space-between;
   display: inline;
 }
@@ -384,18 +382,18 @@ h2 {
 
 .footer-bar.left {
   float: left;
-  padding-right: 650px;
-  padding-left: 80px;
+  padding-left: 10vh;
+  padding-right: 65vh;
 }
 
 .footer-bar.after-logo {
   float: center;
-  padding-right: 80px;
-  padding-left: 450px;
+  padding-left: 50vh;
+  padding-right: 1vh;
 }
 
 .footer-bar.right {
-  padding-left: 1px;
+  padding-left: 1vh;
   float: right;
 }
 
