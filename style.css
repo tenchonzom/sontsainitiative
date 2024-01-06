@@ -6,28 +6,39 @@
 }
 
 body {
-  background-color: #525136;
+  background-color: #5b653d;
 }
 
-.header {
-  display: grid;
-  place-items: center;
+/* .header {
+  display: flex;
+  place-items: left;
+  align-items: left;
+  justify-content: space-between;
   padding: 10px;
-}
-
-.header-text1 {
-  text-align: center;
 }
 
 .header a:link,
 a:visited {
-  color: black;
+  align-items: left;
+  color: grey;
 }
 
 .header img {
   float: left;
-  width: 35px;
-  height: 35px;
+  width: 280px;
+  height: 50px;
+}
+
+.menu-button {
+  flex-grow: 1;
+  flex-basis: 0;
+  float: left;
+}
+
+.logo-center {
+  flex-grow: 2;
+  flex-basis: 0;
+  text-align: center;
 }
 
 .header h1 {
@@ -36,6 +47,37 @@ a:visited {
   font-family: "Mate SC";
   font-size: 25px;
   color: #f6f7ef;
+} */
+
+.header {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  position: relative; /* Allows absolute positioning relative to this container */
+  background-color: #5b653d; /* Your color */
+  padding: 2%; /* Adjust padding as necessary */
+}
+
+.menu-button {
+  position: absolute; /* Absolutely position the menu button */
+  left: 10px; /* Adjust based on desired spacing from the left edge */
+  top: 10px; /* Adjust based on desired spacing from the top */
+}
+
+.logo-center img {
+  width: 250px;
+  height: 50px;
+}
+
+.logo-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-button img {
+  height: 40px;
+  width: 40px;
 }
 
 .socials img {
@@ -358,64 +400,122 @@ h2 {
 
 .footer {
   display: flex;
-  position: fixed;
-  margin-top: 15px;
-  width: 100vw;
+  background-color: #5b653d;
+  color: #ffffff;
+  padding: 20px 0;
   bottom: 0;
-  text-align: center;
-  background-color: #525136;
-  color: white;
-  padding: 30px;
+  position: fixed;
 }
 
-.footer-bar,
-.footer-logo {
+.container {
+  display: flex;
   justify-content: space-between;
-  display: inline;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-right: 90px;
+  padding: 0px 90px;
 }
 
-.footer-bar a {
-  text-decoration: none;
-  color: white;
-  font-size: 5px;
+.logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.footer-bar.left {
+.logo img {
   float: left;
-  padding-left: 10vh;
-  padding-right: 65vh;
+  width: 270px;
+  height: 50px;
 }
 
-.footer-bar.after-logo {
-  float: center;
-  padding-left: 50vh;
-  padding-right: 1vh;
-}
-
-.footer-bar.right {
-  padding-left: 1vh;
-  float: right;
-}
-
-.footer a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-  padding: 0;
-}
-
-.footer-logo a {
-  font-size: 20px;
-}
-
-ul.no-bullets {
-  list-style-type: none;
+.newsletter {
+  text-align: center;
   position: relative;
-  margin: 0;
-  padding: 0;
+  padding-top: 20px;
+  margin-left: 20vh;
 }
 
-ul.no-bullets li {
-  padding-bottom: 0px;
-  margin: 0;
+.newsletter-text {
+  position: absolute;
+  font-size: 20px;
+  padding-bottom: 10px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0;
+  width: 100%;
+}
+
+.newsletter input {
+  padding: 5px;
+  margin-right: 10px;
+  width: 300px;
+  height: 40px;
+  background-color: #5b653d;
+  border-color: #f6f7ef;
+}
+
+.newsletter button {
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: #227722;
+  border: none;
+  color: white;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  margin-left: 18vh;
+}
+
+.no-bullets {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.no-bullets li {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .list li {
+    margin-bottom: 5px;
+  }
+
+  .newsletter {
+    width: 100%;
+    align-self: center;
+  }
+
+  .footer-nav a {
+    display: block;
+    margin-bottom: 1px;
+  }
+
+  .logo,
+  .newsletter form {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
 }
