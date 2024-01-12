@@ -417,12 +417,17 @@ h2 {
   padding: 0px 90px;
 }
 
-.logo {
+.container img {
+  width: 270px;
+  height: 50px;
+}
+
+.logo-footer {
   font-size: 24px;
   font-weight: bold;
 }
 
-.logo img {
+.logo-footer img {
   float: left;
   width: 270px;
   height: 50px;
@@ -432,7 +437,7 @@ h2 {
   text-align: center;
   position: relative;
   padding-top: 20px;
-  margin-left: 20vh;
+  margin-left: 30vh;
 }
 
 .newsletter-text {
@@ -468,7 +473,7 @@ h2 {
   text-decoration: none;
   margin-left: 20px;
   font-size: 16px;
-  margin-left: 18vh;
+  margin-left: 25vh;
 }
 
 .no-bullets {
@@ -483,7 +488,7 @@ h2 {
   padding: 0px 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1008px) {
   .footer {
     flex-direction: row;
   }
@@ -512,7 +517,44 @@ h2 {
     margin-bottom: 1px;
   }
 
-  .logo,
+  .logo-footer,
+  .newsletter form {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 750px) {
+  .footer {
+    flex-direction: row;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .list li {
+    margin-bottom: 5px;
+  }
+
+  .newsletter {
+    width: 100%;
+    align-self: center;
+  }
+
+  .footer-nav a {
+    display: block;
+    margin-bottom: 1px;
+  }
+
+  .logo-footer,
   .newsletter form {
     text-align: center;
     align-items: center;
