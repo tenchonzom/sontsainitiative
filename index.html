@@ -1,71 +1,86 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sontsa Initiative</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <title> Sontsa Initiative </title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
+  <body>
     <div class="header">
-        <a href="index.html" class="menu-button">
-            <img src="site icons/list.svg"></img>
-        </a>
-        <a href="index.html" class="logo-center">
-            <img src="site icons/logo.png"></img>
-        </a>
+      <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">
+        <img src="site icons/list.svg" alt="Menu" />
+      </a>
+      <a href="index.html" class="logo-center">
+        <img src="site icons/logo.png" alt="Logo" />
+      </a>
+      <div class="placeholder"></div>
     </div>
-    <!-- <div class="topnav">
-        <ul>
-            <li class="nav-item"><a href="mentorship.html">MENTORSHIP</a></li>
-            <li class="nav-item"><a href="team.html">TEAM</a></li>
-            <li class="nav-item"><a href="volunteer.html">VOLUNTEER</a></li>
-            <li class="dropdown">
-                <a href="resources.html" class="dropbtn">RESOURCES</a>
-                <div class="dropdown-content">
-                    <a href="tips.html">TIPS & ADVICE</a>
-                    <a href="workshops.html">PREVIOUS WORKSHOPS</a>
-                    <a href="scholarships.html">SCHOLARSHIPS</a>
-                </div>
-            </li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <div class="socials">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sontsainitiative@gmail.com">
-                    <img src="social icons/mail.png">
-                </a>
-                <a href="https://www.youtube.com/@sontsainitiatve198">
-                    <img src="social icons/youtube.png">
-                </a>
-                <a href="https://www.instagram.com/sontsa_initiative/">
-                    <img src="social icons/instagram-logo.png">
-                </a>
-            </div>
-        </ul>
-    </div> -->
+    <div id="topnav" class="topnav">
+      <ul>
+        <li class="nav-item"><a href="mentorship.html">MENTORSHIP</a></li>
+        <li class="nav-item"><a href="team.html">TEAM</a></li>
+        <li class="nav-item"><a href="volunteer.html">VOLUNTEER</a></li>
+        <li class="dropdown">
+          <a href="resources.html" class="dropbtn">RESOURCES</a>
+          <div class="dropdown-content">
+            <a href="tips.html">TIPS & ADVICE</a>
+            <a href="workshops.html">PREVIOUS WORKSHOPS</a>
+            <a href="scholarships.html">SCHOLARSHIPS</a>
+          </div>
+        </li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <div class="socials">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sontsainitiative@gmail.com"
+          >
+            <img src="social icons/mail.png" />
+          </a>
+          <a href="https://www.youtube.com/@sontsainitiatve198">
+            <img src="social icons/youtube.png" />
+          </a>
+          <a href="https://www.instagram.com/sontsa_initiative/">
+            <img src="social icons/instagram-logo.png" />
+          </a>
+        </div>
+      </ul>
+    </div>
     <div class="home-box">
+      <!-- Content here -->
     </div>
     <footer class="footer">
-        <div class="container">
-            <img class = "logo-footer" src="site icons/logo.png" />
-            <form class="newsletter">
-                <p class="newsletter-text">sign up for our newsletter:</p>
-                <input type="email" />
-            </form>
-            <nav class="footer-nav">
-                <ul class="no-bullets">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">RESOURCES</a></li>
-                </ul>
-            </nav>
-            <nav class="footer-nav">
-                <ul class="no-bullets">
-                    <li><a href="#">DISCORD</a></li>
-                    <li><a href="#">WHATSAPP</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <img class="logo-footer" src="site icons/logo.png" alt="Footer Logo" />
+        <form class="newsletter">
+          <p class="newsletter-text">Sign up for our newsletter:</p>
+          <input type="email" placeholder="Your email" />
+        </form>
+        <nav class="footer-nav">
+          <ul class="no-bullets">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">RESOURCES</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul class="no-bullets">
+            <li><a href="#">DISCORD</a></li>
+            <li><a href="#">WHATSAPP</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-</body>
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("topnav");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
