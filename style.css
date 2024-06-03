@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #5b653d;
+  font-family: "Martel", serif;
+  background-color: #eae7dc;
 }
 
 .header {
@@ -43,9 +43,18 @@ body {
 }
 
 .home-box {
-  height: 80vh; /* Adjust as needed */
-  background-color: #e0e0e0; /* Example background color */
   margin-top: 60px; /* Adjust this value based on the height of your header */
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-section img,
+.our-story img,
+.our-work img {
+  width: 100%;
+  max-width: 800px; /* Adjust to fit your design */
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .topnav {
@@ -97,6 +106,21 @@ body {
   background-color: #4a5235;
 }
 
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: #4a5235;
+  padding-left: 20px;
+}
+
+.dropdown-content a {
+  padding: 10px 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: #3a4225;
+}
+
 .topnav .socials {
   display: flex;
   justify-content: center;
@@ -138,6 +162,20 @@ body {
 
 .footer .newsletter-text {
   margin-right: 10px;
+}
+
+.footer .newsletter input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid white; /* Adding a small line border */
+  border-radius: 5px;
+  width: 250px; /* Adjust as needed */
+  background-color: #5b653d; /* Match the background color of the footer */
+  color: white;
+}
+
+.footer .newsletter input[type="email"]::placeholder {
+  color: white;
 }
 
 .footer .footer-nav {

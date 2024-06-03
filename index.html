@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sontsa Initiative</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -23,8 +27,13 @@
         <li class="nav-item"><a href="team.html">TEAM</a></li>
         <li class="nav-item"><a href="volunteer.html">VOLUNTEER</a></li>
         <li class="dropdown">
-          <a href="resources.html" class="dropbtn">RESOURCES</a>
-          <div class="dropdown-content">
+          <a
+            href="javascript:void(0);"
+            class="dropbtn"
+            onclick="toggleDropdown()"
+            >RESOURCES</a
+          >
+          <div class="dropdown-content" id="dropdown">
             <a href="tips.html">TIPS & ADVICE</a>
             <a href="workshops.html">PREVIOUS WORKSHOPS</a>
             <a href="scholarships.html">SCHOLARSHIPS</a>
@@ -48,7 +57,20 @@
       </ul>
     </div>
     <div class="home-box">
-      <!-- Content here -->
+      <div class="container">
+        <div class="hero-section">
+          <img
+            src="site icons/home-page-header.png"
+            alt="Sontsa Initiative Header"
+          />
+        </div>
+        <div class="our-story">
+          <img src="site icons/our-story-div.png" alt="Our Story Section" />
+        </div>
+        <div class="our-work">
+          <img src="site icons/sontsa-work.png" alt="Our Work Section" />
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <div class="container">
@@ -75,6 +97,15 @@
     <script>
       function toggleMenu() {
         var x = document.getElementById("topnav");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function toggleDropdown() {
+        var x = document.getElementById("dropdown");
         if (x.style.display === "block") {
           x.style.display = "none";
         } else {
