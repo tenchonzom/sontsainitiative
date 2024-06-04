@@ -1,72 +1,117 @@
 <!DOCTYPE html>
-    <head>
-        <title> Sontsa Initiative </title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div class="header">
-            <a href="index.html">
-                <img src="site icons/grow.png"></img>
-                <h1>SONTSA INITIATIVE</h1>
-            </a>
-        </div>
-        <div class="topnav">
-            <ul>
-                <li class="nav-item"><a href="mentorship.html">MENTORSHIP</a></li>
-                <li class="nav-item"><a href="team.html">TEAM</a></li>
-                <li class="nav-item"><a href="volunteer.html">VOLUNTEER</a></li>
-                <li class="dropdown">
-                    <a href="resources.html" class="dropbtn">RESOURCES</a>
-                    <div class="dropdown-content">
-                        <a href="tips.html">TIPS & ADVICE</a>
-                        <a href="workshops.html">PREVIOUS WORKSHOPS</a>
-                        <a href="scholarships.html">SCHOLARSHIPS</a>
-                    </div>
-                </li>
-                <li><a href="events.html">EVENTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <div class="socials">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sontsainitiative@gmail.com">
-                        <img src="social icons/mail.png">
-                    </a>
-                    <a href="https://www.youtube.com/@sontsainitiatve198">
-                        <img src="social icons/youtube.png">
-                    </a>
-                    <a href="https://www.instagram.com/sontsa_initiative/">
-                        <img src="social icons/instagram-logo.png">
-                    </a>
-                </div>
-            </ul>
-        </div>
-        <div class="volunteer-box">
-            
-            <h3>VOLUNTEER WITH SONTSA</h3>
-            <p>
-                Are you interested in helping the Tibetan youth? Volunteer with us!
-            </p>
-            
-            <div class="mentor-wrapper">
-                <div class="mentor">
-                    <h4>MENTOR</h4>
-                    <p>We're looking for Tibetan university students in the US that have gone through the process of applying to college in the US. We prefer mentors that went to high school in India as most of our mentees come from this background, but anybody that can help with the US college application process should apply!</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sontsa Initiative</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-                    <button name="mentor-button" type="button" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSdEjDInugEBvqcXr3xnuanEdEv2KaEsxPD-LUen_l7pwXHJBA/viewform';">APPLY TO BE A MENTOR</button> 
-                    
-
-            </div>
-            </div>
-            
-            <div class="mentee-wrapper">
-                <div class="mentee">
-                    <h4>MENTEE</h4>
-                    <p>We hope to welcome an amazing group of bright Tibetan youths in exile committed to the goals of pursuing four year Undergraduate eduction in the United States. Through the program, you will get to know amazing friends, mentors, and a community of dedicated Tibetan youths. We are looking forward to getting know you all!</p>
-                
-                    <button name="mentee-button" type="button" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfv42gzzjFcfkdDA6gnsyD7DsEACiRCX62z6DgcOn6BQNf4zQ/viewform';">APPLY TO BE A MENTEE</button>  
-                   
-
-            </div>
+  <body>
+    <div class="header">
+      <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">
+        <img src="site icons/list.svg" alt="Menu" />
+      </a>
+      <a href="index.html" class="logo-center">
+        <img src="site icons/logo.png" alt="Logo" />
+      </a>
+      <div class="placeholder"></div>
+    </div>
+    <div id="topnav" class="topnav">
+      <ul>
+        <li class="nav-item"><a href="mentorship.html">MENTORSHIP</a></li>
+        <li class="nav-item"><a href="team.html">TEAM</a></li>
+        <li class="nav-item"><a href="volunteer.html">VOLUNTEER</a></li>
+        <li class="dropdown">
+          <a
+            href="javascript:void(0);"
+            class="dropbtn"
+            onclick="toggleDropdown()"
+            >RESOURCES</a
+          >
+          <div class="dropdown-content" id="dropdown">
+            <a href="tips.html">TIPS & ADVICE</a>
+            <a href="workshops.html">PREVIOUS WORKSHOPS</a>
+            <a href="scholarships.html">SCHOLARSHIPS</a>
+          </div>
+        </li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <div class="socials">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sontsainitiative@gmail.com"
+          >
+            <img src="social icons/mail.png" />
+          </a>
+          <a href="https://www.youtube.com/@sontsainitiatve198">
+            <img src="social icons/youtube.png" />
+          </a>
+          <a href="https://www.instagram.com/sontsa_initiative/">
+            <img src="social icons/instagram-logo.png" />
+          </a>
         </div>
-    </body>
+      </ul>
+    </div>
+    <div class="home-box">
+      <div class="container">
+        <div class="hero-section">
+          <img
+            src="site icons/home-page-header.png"
+            alt="Sontsa Initiative Header"
+          />
+        </div>
+        <div class="our-story">
+          <img src="site icons/our-story-div.png" alt="Our Story Section" />
+        </div>
+        <div class="our-work">
+          <img src="site icons/sontsa-work.png" alt="Our Work Section" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <img class="logo-footer" src="site icons/logo.png" alt="Footer Logo" />
+        <form class="newsletter">
+          <p class="newsletter-text">Sign up for our newsletter:</p>
+          <input type="email" placeholder="Your email" />
+        </form>
+        <nav class="footer-nav">
+          <ul class="no-bullets">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">RESOURCES</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul class="no-bullets">
+            <li><a href="#">DISCORD</a></li>
+            <li><a href="#">WHATSAPP</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("topnav");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function toggleDropdown() {
+        var x = document.getElementById("dropdown");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>

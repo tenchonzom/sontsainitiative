@@ -50,11 +50,40 @@ body {
 
 .hero-section img,
 .our-story img,
-.our-work img {
+.our-work img,
+.team-section img {
   width: 100%;
   max-width: 800px; /* Adjust to fit your design */
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.team-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.team-member img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.details {
+  font-size: 1em;
+  color: #555;
 }
 
 .topnav {
