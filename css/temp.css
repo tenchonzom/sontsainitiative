@@ -1,0 +1,15 @@
+.under_construction {
+    margin-top: 250px;
+    margin-bottom: 400px;
+}
+
+.under_construction div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.under_construction h3 {
+    font-family: 'Montserrat', serif;
+    font-size: 4em;
+}

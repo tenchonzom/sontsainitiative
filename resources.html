@@ -1,50 +1,86 @@
 <!DOCTYPE html>
-    <head>
-        <title> Sontsa Initiative </title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <div class="header">
-            <a href="index.html">
-                <img src="site icons/grow.png"></img>
-                <h1>SONTSA INITIATIVE</h1>
-            </a>
-        </div>
-        <div class="topnav">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sontsa Initiative</title>
+    <link rel="stylesheet" href="css/temp.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
             <ul>
-                <li class="nav-item"><a href="mentorship.html">MENTORSHIP</a></li>
-                <li class="nav-item"><a href="team.html">TEAM</a></li>
-                <li class="nav-item"><a href="volunteer.html">VOLUNTEER</a></li>
-                <li class="dropdown">
-                    <a href="resources.html" class="dropbtn">RESOURCES</a>
-                    <div class="dropdown-content">
-                        <a href="tips.html">TIPS & ADVICE</a>
-                        <a href="workshops.html">PREVIOUS WORKSHOPS</a>
-                        <a href="scholarships.html">SCHOLARSHIPS</a>
-                    </div>
-                </li>
-                <li><a href="events.html">EVENTS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <div class="socials">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sontsainitiative@gmail.com">
-                        <img src="social icons/mail.png">
-                    </a>
-                    <a href="https://www.youtube.com/@sontsainitiatve198">
-                        <img src="social icons/youtube.png">
-                    </a>
-                    <a href="https://www.instagram.com/sontsa_initiative/">
-                        <img src="social icons/instagram-logo.png">
-                    </a>
-                </div>
+                <li><a href="#" onclick="openMenu()">☰</a></li>
             </ul>
+        </nav>
+        <a href="index.html">
+            <div class="logo">
+                <img src="images/logo.png">
+                <h3>Sontsa Initiative</h3>
+            </div>
+        </a>
+        <div class="socials">
+            <a href="https://www.instagram.com/sontsa_initiative/"><img src="images/socials/intsa.png"></a>
+            <a href="https://www.youtube.com/@sontsainitiative"><img src="images/socials/youtube.png"></a>
+            <a href="https://www.facebook.com/sontsainitiative"><img src="images/socials/facebook.png"></a>
+            <a href="https://linktr.ee/Sontsainitiatve"><img src="images/socials/linktree.png"></a>
         </div>
-        <div class="home-box">
-            <h3>RESOURCES</h3>
-            <p>
-                Here are some resources to assist with your college application journey.
-            </p>
+    </header>
+
+    <div id="menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+        <div class="pages">
+            <a href="index.html">home</a>
+            <a href="team.html">meet the team</a>
+            <a href="contact.html">contact us</a>
+            <a href="resources.html">resources</a>
+            <a href="blog.html">blog</a>
         </div>
-    </body>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+    <main>
+        <section class="under_construction">
+            <div>
+                <h3>resources under construction</h3>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <form class="newsletter">
+            <p>Sign up for our newsletter:</p>
+            <input type="email" placeholder="your email" />
+        </form>
+
+        <div class="footer_pages">
+            <a href="index.html">ABOUT</a>
+            <a href="team.html">TEAM</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="resources.html">RESOURCES</a>
+            <a href="blog.html">BLOG</a>
+        </div>
+
+        <div class="footer_socials">
+            <a href="https://www.instagram.com/sontsa_initiative/"><img src="images/socials/intsa.png"></a>
+            <a href="https://www.youtube.com/@sontsainitiative"><img src="images/socials/youtube.png"></a>
+            <a href="https://www.facebook.com/sontsainitiative"><img src="images/socials/facebook.png"></a>
+            <a href="https://linktr.ee/Sontsainitiatve"><img src="images/socials/linktree.png"></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
