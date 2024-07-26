@@ -1,0 +1,238 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #F6F7EF;
+}
+
+/* Header styles */
+
+header {
+    background-color: #5B653D;
+    color: #fff;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+}
+
+a:visited {
+    color: inherit; /* Keep the same color as unvisited links */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    font-family: "Mate SC", serif;
+    font-size: 1.6em;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.socials img {
+    height: 25px;
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sliding menu styles */
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #D0D1A0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: "Montserrat", serif;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+    padding: 8px 8px 8px 32px;
+    color: #2C360C;
+}
+
+.pages a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #2C360C;
+    display: block;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.pages a:hover {
+    background-color: #2C360C;
+    color: #D0D1A0;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(44,54,12,0.5);
+    display: none;
+}
+
+/* Footer Section Style */ 
+
+footer {
+    margin-top: 80px;
+    background-color: #5B653D;
+    color: white;
+    padding: 20px 40px;
+}
+
+.newsletter {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+}
+
+.newsletter p {
+    padding-right: 15px;
+}
+
+.newsletter input[type="email"] {
+    padding-right: 40px;
+    padding-left: 10px;
+    padding: 5px;
+    background-color: transparent;
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+.newsletter input[type="email"]::placeholder {
+    color: white; /* Adjust placeholder color as needed */
+}
+
+.footer_pages {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+}
+
+.footer_pages a {
+    padding: 0 30px;
+}
+
+.footer_socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer_socials img {
+    height: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+/* Media Queries for Responsive Design */
+/* less content in mobile version for simpler viewing */
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: -50px;
+    }
+
+    .socials {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .socials img {
+        display: none;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_pages {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .newsletter input[type="email"] {
+        text-align: center;
+        width: 80%;
+        padding: 5px;
+        background-color: transparent;
+        font-family: 'Montserrat', serif;
+        font-size: 18px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px; /* Optional: for rounded corners */
+    }
+
+    .footer_pages a {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+}

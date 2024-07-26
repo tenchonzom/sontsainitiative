@@ -1,0 +1,125 @@
+/* Media Queries for Responsive Design */
+/* less content in mobile version for simpler viewing */
+
+/* @media (max-width: 768px) {
+    
+} */
+
+/* Team Title Style */
+
+.team-title {
+    background-color: #C7C690;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.team-title h1 {
+    font-family: 'Mate SC', serif;
+    font-size: 3em;
+}
+
+/* Bio Box Style */
+
+.bio-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.bio-box h1 {
+    font-family: 'Mate SC', serif;
+    font-size: 2.6em;
+}
+
+.bio-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.bio-card {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.bio-card img {
+    height: 70%;
+}
+
+.bio-card h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.75em;
+}
+
+.bio-card p {
+    font-family: 'Montserrat', serif;
+    font-size: 1.3em;
+}
+
+/* Media Queries for Responsive Design */
+/* less content in mobile version for simpler viewing */
+
+@media (max-width: 768px) {
+    .team-title {
+        background-color: #C7C690;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .team-title h1 {
+        font-size: 2.3em;
+    }
+
+    .bio-box {
+        margin-top: 20px;
+        align-self: center;
+    }
+
+
+    .bio-box h1 {
+        font-family: 'Mate SC', serif;
+        font-size: 2em;
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .bio-box h1::before {
+        content: "";
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        height: 0.4em;
+        background-color: #ffd000;
+        z-index: -1;
+        transform: translateY(-50%);
+    }
+
+
+    .bio-row {
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-direction: column;
+    }
+
+    .bio-card img {
+        height: 30%;
+    }
+
+    .bio-card h2 {
+        font-size: 1.5em;
+    }
+
+    .bio-card p {
+        font-size: 1.2em;
+    }
+}

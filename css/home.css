@@ -1,0 +1,355 @@
+/* Intro box styles */
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 100px;
+}
+
+/* Intro text div */
+.intro div {
+    width: 40%;
+    padding-left: 30px;
+}
+
+.intro img {
+    height: 15%;
+    width: 15%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro h1 {
+    font-family: "Mate SC", serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro p {
+    font-family: "Martel", serif;
+    font-size: 1.2em;
+}
+
+.intro h2 {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.intro h2::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    /* Adjust to vertically center the highlight */
+    left: 0;
+    right: 0;
+    height: 0.3em;
+    /* Adjust to control the thickness of the highlight */
+    background-color: #ffd000;
+    z-index: -1;
+    /* Ensure the highlight is behind the text */
+    transform: translateY(-50%);
+    /* Adjust to align the highlight */
+}
+
+/* Our story box style */
+.our_story {
+    margin: 0px;
+    margin-top: 50px;
+    display: flex;
+    align-items: stretch;
+}
+
+.our_story div {
+    padding-left: 20px;
+    background-color: #D0D1A0;
+    border-radius: 0px 20px 20px 0px;
+    /* Top-left, top-right, bottom-right, bottom-left */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.our_story h3 {
+    font-family: "Montserrat", serif;
+    font-size: 2em;
+    margin-left: 30px;
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+
+.our_story p {
+    font-family: "Martel", serif;
+    font-size: 1.2em;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.our_story img {
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Cofounders Section Style */
+
+.cofounders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    padding: 0 100px;
+}
+
+.cofounders div {
+    text-align: center;
+}
+
+.cofounders h2 {
+    font-family: "Montserrat", serif;
+}
+
+.cofounders img {
+    width: 80%;
+}
+
+/* Our Work section style */
+
+.our_work {
+    margin-top: 60px;
+    padding: 0 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.our_work h3 {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.our_work h3::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    /* Adjust to vertically center the highlight */
+    left: 0;
+    right: 0;
+    height: 0.4em;
+    /* Adjust to control the thickness of the highlight */
+    background-color: #ffd000;
+    z-index: -1;
+    /* Ensure the highlight is behind the text */
+    transform: translateY(-50%);
+    /* Adjust to align the highlight */
+}
+
+.our_work p {
+    font-family: "Martel", serif;
+    font-size: 1.3em;
+}
+
+/* Our Work Images Styling */
+
+.our_work_images {
+    margin-top: 40px;
+    padding: 0 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: stretch;
+}
+
+.definition img {
+    height: 90%;
+    margin-right: 40px;
+    padding-left: 100px;
+}
+
+.meeting_pic img {
+    width: 80%;
+    margin-left: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Work Descriptions Style */
+
+.work_descriptions {
+    padding: 0 50px;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.work_descriptions div {
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 30px;
+    background-color: #D0D1A0;
+    border-radius: 20px;
+    /* Top-left, top-right, bottom-right, bottom-left */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.work_descriptions h3 {
+    font-family: "Montserrat", serif;
+    font-size: 24px;
+}
+
+.work_descriptions p {
+    font-family: "Martel", serif;
+    font-size: 1em;
+}
+
+/* Insta Showcase Section Style */
+
+.insta_showcase img {
+    margin-top: 80px;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+/* less content in mobile version for simpler viewing */
+
+@media (max-width: 768px) {
+
+    /* Intro Mobile Style */
+    .intro {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 120px;
+    }
+
+    .intro img {
+        width: 40%;
+    }
+
+    .intro div {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .intro h1 {
+        font-family: "Mate SC", serif;
+        font-size: 2.5em;
+        margin: 0;
+    }
+    
+    .intro p {
+        font-family: "Martel", serif;
+        font-size: 1em;
+    }
+
+    /* Our Story Mobile Style */
+
+    .our_story {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .our_story div {
+        background-color: #D0D1A0;
+        border-radius: 0;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .our_story img {
+        margin-top: 40px;
+        width: 40%;
+        align-self: center;
+    }
+
+    .our_story h3 {
+        font-size: 1.8em;
+    }
+
+    .our_story p {
+        font-family: "Martel", serif;
+        font-size: 0.9em;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .cofounders {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+
+    .cofounders h2 {
+        font-size: 1em;
+    }
+
+    .our_work {
+        flex-direction: column;
+    }
+
+    .our_work p {
+        font-family: "Martel", serif;
+        font-size: 1em;
+    }
+
+    .our_work_images {
+        margin-top: 40px;
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .definition img {
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .meeting_pic img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .work_descriptions {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .work_descriptions div {
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Hide on Mobile for Conciseness */
+    .insta_showcase img {
+        display: none;
+    }
+}

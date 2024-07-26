@@ -1,117 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sontsa Initiative</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Martel:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-  <body>
-    <div class="header">
-      <a href="javascript:void(0);" class="menu-button" onclick="toggleMenu()">
-        <img src="site icons/list.svg" alt="Menu" />
-      </a>
-      <a href="index.html" class="logo-center">
-        <img src="site icons/logo.png" alt="Logo" />
-      </a>
-      <div class="placeholder"></div>
-    </div>
-    <div id="topnav" class="topnav">
-      <ul>
-        <li class="nav-item"><a href="mentorship.html">MENTORSHIP</a></li>
-        <li class="nav-item"><a href="team.html">TEAM</a></li>
-        <li class="nav-item"><a href="volunteer.html">VOLUNTEER</a></li>
-        <li class="dropdown">
-          <a
-            href="javascript:void(0);"
-            class="dropbtn"
-            onclick="toggleDropdown()"
-            >RESOURCES</a
-          >
-          <div class="dropdown-content" id="dropdown">
-            <a href="tips.html">TIPS & ADVICE</a>
-            <a href="workshops.html">PREVIOUS WORKSHOPS</a>
-            <a href="scholarships.html">SCHOLARSHIPS</a>
-          </div>
-        </li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openMenu()">☰</a></li>
+            </ul>
+        </nav>
+        <a href="index.html">
+            <div class="logo">
+                <img src="images/logo.png">
+                <h3>Sontsa Initiative</h3>
+            </div>
+        </a>
         <div class="socials">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=sontsainitiative@gmail.com"
-          >
-            <img src="social icons/mail.png" />
-          </a>
-          <a href="https://www.youtube.com/@sontsainitiatve198">
-            <img src="social icons/youtube.png" />
-          </a>
-          <a href="https://www.instagram.com/sontsa_initiative/">
-            <img src="social icons/instagram-logo.png" />
-          </a>
+            <a href="https://www.instagram.com/sontsa_initiative/"><img src="images/socials/intsa.png"></a>
+            <a href="https://www.youtube.com/@sontsainitiative"><img src="images/socials/youtube.png"></a>
+            <a href="https://www.facebook.com/sontsainitiative"><img src="images/socials/facebook.png"></a>
+            <a href="https://linktr.ee/Sontsainitiatve"><img src="images/socials/linktree.png"></a>
         </div>
-      </ul>
-    </div>
-    <div class="home-box">
-      <div class="container">
-        <div class="hero-section">
-          <img
-            src="site icons/home-page-header.png"
-            alt="Sontsa Initiative Header"
-          />
-        </div>
-        <div class="our-story">
-          <img src="site icons/our-story-div.png" alt="Our Story Section" />
-        </div>
-        <div class="our-work">
-          <img src="site icons/sontsa-work.png" alt="Our Work Section" />
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <img class="logo-footer" src="site icons/logo.png" alt="Footer Logo" />
-        <form class="newsletter">
-          <p class="newsletter-text">Sign up for our newsletter:</p>
-          <input type="email" placeholder="Your email" />
-        </form>
-        <nav class="footer-nav">
-          <ul class="no-bullets">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">RESOURCES</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-nav">
-          <ul class="no-bullets">
-            <li><a href="#">DISCORD</a></li>
-            <li><a href="#">WHATSAPP</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-    <script>
-      function toggleMenu() {
-        var x = document.getElementById("topnav");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+    </header>
 
-      function toggleDropdown() {
-        var x = document.getElementById("dropdown");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
-  </body>
+    <div id="menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">×</a>
+        <div class="pages">
+            <a href="index.html">home</a>
+            <a href="team.html">meet the team</a>
+            <a href="contact.html">contact us</a>
+            <a href="resources.html">resources</a>
+            <a href="blog.html">blog</a>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+    <main>
+        <section class="intro">
+            <img src="images/green_home_logo.png">
+            <div>
+                <h1>Sontsa Initiative</h1>
+                <p>We are committed to empowering Tibetan youth in exile through their academic and career journey,</p>
+                <h2>a sontsa at a time</h2>
+            </div>
+        </section>
+
+        <section class="our_story">
+            <div>
+                <h3>OUR STORY</h3>
+                <p>
+                    Sontsa Initiative is a student-run volunteer-based organization created by Co-Founders Kalden
+                    Namgyal (Brown ‘24), Tenzin Gyaltsen (Macalaster ‘24), and Tenzin Chonzom (Stanford ‘25) in 2020
+                    with the aim of helping Tibetan students in exile apply to colleges in America, based on their own
+                    experiences. Realizing how important mentorship was in their own college application journeys, they
+                    wanted to provide the same assistance to the next generation of Tibetan students applying to
+                    college. We especially wanted to help Tibetan students in exile because there is a lack of resources
+                    and support for students who wish to apply to higher education institutions in America.
+                </p>
+            </div>
+            <img src="images/zoom_pic.png">
+        </section>
+
+        <section class="cofounders">
+            <div>
+                <img src="/images/team/cofounders/chonzom.png">
+                <h2>TENZIN CHONZOM</h2>
+            </div>
+            <div>
+                <img src="/images/team/cofounders/kalden.png">
+                <h2>KALDEN NAMGYAL</h2>
+            </div>
+            <div>
+                <img src="/images/team/cofounders/gyaltsen.png">
+                <h2>TENZIN GYALTSEN</h2>
+            </div>
+        </section>
+
+        <section class="our_work">
+            <div>
+                <h3>OUR WORK</h3>
+                <p>
+                    Sontsa Initiative operates with two main approaches: 1-on-1 assistance through our mentorship
+                    program, and collectively inspiring Tibetan youth through our public workshops, Q&As, and events.
+                    Sontsa runs everything completely remotely and on Zoom, due to our international audience.
+                </p>
+            </div>
+        </section>
+
+        <section class="our_work_images">
+            <div class="definition">
+                <img src="/images/definition.png">
+            </div>
+            <div class="meeting_pic">
+                <img src="/images/zoom_meeting.png">
+            </div>
+        </section>
+
+        <section class="work_descriptions">
+            <div>
+                <h3>WORKSHOPS</h3>
+                <p>
+                    Sontsa Initiative hosts many different virtual workshops with topics ranging from college
+                    applications, scholarships and financial aid, graduate school, and careers. Most of our workshops
+                    are recorded and uploaded to our YouTube
+                </p>
+            </div>
+
+            <div>
+                <h3>MENTORSHIP</h3>
+                <p>
+                    We host our annual mentorship program where we match a mentor who has gone through the US college
+                    application process with a mentee who is planning to apply to US colleges. Our application season
+                    typically opens up in late summer or early fall. 
+                </p>
+            </div>
+
+            <div>
+                <h3>RESOURCES</h3>
+                <p>
+                    Sontsa Initiative mentors have curated different resources that helped them with college application
+                    essays, such as writing prompts, tips and advice, lists of scholarships, and our own recorded
+                    workshops which are uploaded to YouTube.
+                </p>
+            </div>
+        </section>
+
+        <section class="insta_showcase">
+            <img src="images/insta_showcase.png">
+        </section>
+
+    </main>
+
+    <footer>
+        <form class="newsletter">
+            <p>Sign up for our newsletter:</p>
+            <input type="email" placeholder="your email" />
+        </form>
+
+        <div class="footer_pages">
+            <a href="index.html">ABOUT</a>
+            <a href="team.html">TEAM</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="resources.html">RESOURCES</a>
+            <a href="blog.html">BLOG</a>
+        </div>
+
+        <div class="footer_socials">
+            <a href="https://www.instagram.com/sontsa_initiative/"><img src="images/socials/intsa.png"></a>
+            <a href="https://www.youtube.com/@sontsainitiative"><img src="images/socials/youtube.png"></a>
+            <a href="https://www.facebook.com/sontsainitiative"><img src="images/socials/facebook.png"></a>
+            <a href="https://linktr.ee/Sontsainitiatve"><img src="images/socials/linktree.png"></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
