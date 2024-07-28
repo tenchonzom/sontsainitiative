@@ -2,6 +2,8 @@
 // to the top of the page. Right now, browser refreshes page and 
 // scrolls down to where user had scrolled before.
 
+// TODO: Send mailchimp confirmation email to newsletter form inputted email.
+
 let scrollPosition = 0;
 
 function openMenu() {

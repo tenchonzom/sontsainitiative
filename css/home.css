@@ -99,26 +99,34 @@
     margin-right: 30px;
 }
 
-/* Cofounders Section Style */
+/* Co-directors Section Style */
 
-.cofounders {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.codirectors {
     align-items: center;
-    margin-top: 80px;
+    margin-top: 40px;
     padding: 0 100px;
-}
-
-.cofounders div {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-.cofounders h2 {
+.codirectors h3 {
+    font-family: "Montserrat", serif;
+    font-size: 2em;
+}
+
+.codirector_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.codirector_image h2 {
     font-family: "Montserrat", serif;
 }
 
-.cofounders img {
+.codirector_image img {
     width: 80%;
 }
 

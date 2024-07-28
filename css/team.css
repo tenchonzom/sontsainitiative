@@ -1,10 +1,3 @@
-/* Media Queries for Responsive Design */
-/* less content in mobile version for simpler viewing */
-
-/* @media (max-width: 768px) {
-    
-} */
-
 /* Team Title Style */
 
 .team-title {
@@ -33,6 +26,22 @@
 .bio-box h1 {
     font-family: 'Mate SC', serif;
     font-size: 2.6em;
+
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.bio-box h1::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    height: 0.4em;
+    background-color: #ffd000;
+    z-index: -1;
+    transform: translateY(-50%);
 }
 
 .bio-row {
@@ -86,24 +95,11 @@
 
     .bio-box h1 {
         font-family: 'Mate SC', serif;
-        font-size: 2em;
+        font-size: 1.8em;
         position: relative;
         display: inline-block;
         padding: 0 10px;
     }
-
-    .bio-box h1::before {
-        content: "";
-        position: absolute;
-        top: 80%;
-        left: 0;
-        right: 0;
-        height: 0.4em;
-        background-color: #ffd000;
-        z-index: -1;
-        transform: translateY(-50%);
-    }
-
 
     .bio-row {
         margin-left: 50px;
@@ -111,8 +107,12 @@
         flex-direction: column;
     }
 
+    .bio-card {
+        margin-bottom: 30px;
+    }
+
     .bio-card img {
-        height: 30%;
+        width: 100%;
     }
 
     .bio-card h2 {
