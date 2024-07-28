@@ -299,17 +299,23 @@
         margin-right: 30px;
     }
 
-    .cofounders {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-top: 80px;
+    .codirectors {
+        /* margin-left: 10px;
+        margin-right: 10px; */
+
+        padding: 0 10px;
+    }
+
+    .codirector_row {
         padding: 0 20px;
     }
 
-    .cofounders h2 {
-        font-size: 1em;
+    .codirector_image h2 {
+        font-size: 1.3em;
+    }
+
+    .codirector_image img {
+        width: 80%;
     }
 
     .our_work {

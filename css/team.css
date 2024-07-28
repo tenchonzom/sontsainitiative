@@ -26,7 +26,6 @@
 .bio-box h1 {
     font-family: 'Mate SC', serif;
     font-size: 2.6em;
-
     position: relative;
     display: inline-block;
     padding: 0 10px;
@@ -92,13 +91,14 @@
         align-self: center;
     }
 
-
     .bio-box h1 {
-        font-family: 'Mate SC', serif;
-        font-size: 1.8em;
-        position: relative;
-        display: inline-block;
+        font-size: 1.6em;
         padding: 0 10px;
+    }
+
+    .bio-box h1::before {
+        height: 0.2m;
+        transform: translateY(-50%);
     }
 
     .bio-row {
