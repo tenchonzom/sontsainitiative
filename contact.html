@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sontsa Initiative</title>
-    <link rel="stylesheet" href="css/temp.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,10 +50,53 @@
     <div id="overlay" class="overlay" onclick="closeMenu()"></div>
 
     <main>
-        <section class="under_construction">
+        <section class="contact_title">
             <div>
-                <h3>contact under construction</h3>
+                <h1>CONTACT US</h1>
             </div>
+        </section>
+
+
+
+        <section class="contact_body">
+            <div class="contact_text">
+                <p>
+                    We try respond to promptly respond to emails and direct messages. Make sure to follow us on our
+                    socials & sign up for our newsletter to be updated about our programming!
+                </p>
+            </div>
+
+            <div class="contact_form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="d868a5d5-7210-4f4d-b415-bb8f87585e1c">
+
+                    <div class="name_email_input">
+                        <div class="form_input">
+                            <p>Name: </p>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form_input">
+                            <p>Email: </p>
+                            <input type="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form_input">
+                        <p>Message: </p>
+                        <textarea name="message" required></textarea>
+                    </div>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <!-- Custom Confirmation / Success Page -->
+                    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                    <button class="submit_button" type="submit">Submit Message</button>
+
+                </form>
+            </div>
+
         </section>
 
     </main>
