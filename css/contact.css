@@ -1,0 +1,128 @@
+/* Contact Title Styles */
+
+.contact_title {
+    margin-top: 100px;
+}
+
+.contact_title div {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_title h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 3em;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.contact_title h1::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    height: 0.4em;
+    background-color: #ffd000;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+/* Contact Body Styles */
+
+.contact_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact_text {
+    width: 60%;
+}
+
+.contact_text p {
+    font-family: 'Martel', serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.contact_form {
+    font-family: 'Montserrat', serif;
+    background-color: #C7C690;
+    border-radius: 20px;
+    padding: 20px;
+    width: 60%;
+}
+
+.name_email_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.name_email_input input {
+    padding-right: 40px;
+}
+
+.form_input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input p {
+    margin: 0 0 10px 0;
+}
+
+.contact_form input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact_form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact_form button {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+}
+
+.submit_button:hover {
+    background-color: #2C360C;
+    color: white;
+}
+
+
+/* Media Queries for Responsive Design */
+/* less content in mobile version for simpler viewing */
+
+@media (max-width: 768px) {
+
+    .contact_text {
+        width: 80%;
+    }
+    
+    .contact_form {
+        font-family: 'Montserrat', serif;
+        background-color: #C7C690;
+        border-radius: 20px;
+        padding: 20px;
+        width: 80%;
+    }
+}
