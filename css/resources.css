@@ -1,0 +1,185 @@
+/* Resources Title Styling */
+
+.resources_title {
+    background-color: #C7C690;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.resources_title h1 {
+    font-family: 'Mate SC', serif;
+    font-size: 3em;
+}
+
+.resources_title h3 {
+    font-family: 'Martel', serif;
+    font-size: 1.2em;
+}
+
+/* Tools & Links Styling */
+
+.tools_and_links {
+    margin-top: 60px;
+    padding: 0 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.tools_and_links h3 {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.tools_and_links h3::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    height: 0.4em;
+    background-color: #ffd000;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.tools_row {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tool_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #FEFFF7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 25%;
+}
+
+.tool_box h3 {
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-size: 1.5em;
+}
+
+.tool_box p {
+    margin-top: 20px;
+    font-family: 'Martel', serif;
+    font-size: 1em;
+}
+
+.tool_box a {
+    margin-top: auto; /* Push the link to the bottom */
+    text-align: center; /* Center align the link */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.tool_box a p {
+    font-family: 'Montserrat', serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #727C03;
+    text-align: center;
+}
+
+.tools_divider {
+    border: 0;
+    height: 1.5px;
+    background: #727C03;
+    margin: 80px 0;
+}
+
+/* Past Workshops Styling */
+
+.past_workshops {
+    padding: 0 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.past_workshops h3 {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.past_workshops h3::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    height: 0.4em;
+    background-color: #ffd000;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.workshop_videos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.workshop_row {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.video {
+    background-color: #C7C690;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.video p {
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-size: 1.2em;
+}
+
+.youtube_vid {
+    aspect-ratio: 16 / 9;
+    height: 225px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.more_workshops {
+    display: flex;
+    justify-content: center;
+}
+
+.more_workshops div {
+    width: 50%;
+    background-color: #C7C690;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.more_workshops p {
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-size: 1.5em;
+}
