@@ -183,3 +183,45 @@
     font-family: 'Montserrat', serif;
     font-size: 1.5em;
 }
+
+/* Media Queries for Responsive Design */
+/* less content in mobile version for simpler viewing */
+
+@media (max-width: 768px) {
+    .resources_title h3 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .tools_and_links {
+        text-align: center;
+    }
+
+    .tools_row {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .tool_box {
+        padding: 10px 20px;
+        width: auto;
+    }
+
+    .tool_box p {
+        margin-top: 10px;
+    }
+
+    .past_workshops {
+        text-align: center;
+    }
+
+    .workshop_row {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .video {
+        margin-bottom: 40px;
+    }
+}
