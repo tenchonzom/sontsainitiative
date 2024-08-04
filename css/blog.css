@@ -1,0 +1,60 @@
+/* Contact Title Styles */
+
+.blog_title {
+    margin-top: 100px;
+}
+
+.blog_title div {
+    display: flex;
+    justify-content: center;
+}
+
+.blog_title h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 3em;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.blog_title h1::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    height: 0.4em;
+    background-color: #ffd000;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+/* Blog Content Styles */
+
+.blog_content {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.blog_text {
+    justify-content: center;
+}
+
+.blog_text h3 {
+    font-family: 'Martel', serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.blog_posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.substack-post-embed {
+    width: 100%;
+}
