@@ -1,0 +1,256 @@
+/* Podcast-specific styles: intro + episode cards (borrowed from home.css and team.css) */
+
+/* Intro box styles (consistent with index/home) */
+.intro {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.intro div {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.intro img {
+    width: 18%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro h1 {
+    font-family: "Mate SC", serif;
+    font-size: 2.8em;
+    margin: 0;
+}
+
+.intro p {
+    font-family: "Martel", serif;
+    font-size: 1.1em;
+}
+
+.intro h2 {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-size: 1.6em;
+}
+
+/* OUR STORY section styling */
+.story {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+.story div {
+    flex: 1 1 420px;
+    background-color: #D0D1A0;
+    border-radius: 12px;
+    padding: 26px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.story h3 {
+    font-family: "Montserrat", serif;
+    font-size: 1.8em;
+    margin: 0 0 12px 0;
+}
+
+.story p {
+    font-family: "Martel", serif;
+    font-size: 1.04em;
+    line-height: 1.6;
+    margin: 0;
+    color: #222;
+}
+
+.story img {
+    width: 34%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
+}
+
+/* Goals section styling (match .story layout) */
+.goals {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+.goals div {
+    flex: 1 1 520px;
+    background-color: #D0D1A0;
+    border-radius: 12px;
+    padding: 26px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.goals h3 {
+    font-family: "Montserrat", serif;
+    font-size: 1.8em;
+    margin: 0 0 12px 0;
+}
+
+.goals p, .goals ul {
+    font-family: "Martel", serif;
+    font-size: 1.04em;
+    line-height: 1.6;
+    margin: 0;
+    color: #222;
+}
+
+.goals ul {
+    padding-left: 1.1em;
+    margin-top: 10px;
+}
+
+.goals img {
+    width: 34%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
+}
+
+/* Bio / Episode grid (based on team.css) */
+.bio-box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.bio-box h1 {
+    font-family: 'Mate SC', serif;
+    font-size: 2.2em;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.bio-box h1::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    height: 0.35em;
+    background-color: #ffd000;
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.bio-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.bio-card {
+    margin: 20px;
+    max-width: 320px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.08);
+    padding: 18px;
+    border-radius: 8px;
+    background: #fff;
+    text-align: left;
+}
+
+.bio-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.bio-card h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.1em;
+    margin: 6px 0;
+}
+
+.bio-card p {
+    font-family: 'Martel', serif;
+    font-size: 0.98em;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Episode-specific tweaks */
+.episode_card {
+    max-width: 360px;
+}
+
+.episode_card a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.episode_card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer spacing to avoid overlap on short pages */
+main { padding-bottom: 40px; }
+
+/* Responsive rules */
+@media (max-width: 768px) {
+    .intro {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 120px;
+    }
+
+    .intro img {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .intro div {
+        margin-top: 24px;
+        width: 85%;
+        padding-left: 0;
+    }
+
+    .intro h1 { font-size: 2.2em; }
+    .intro p { font-size: 1em; }
+
+    .bio-row { flex-direction: column; align-items: center; }
+    .bio-card { width: 90%; max-width: 600px; }
+
+    /* Story mobile adjustments */
+    .story {
+        flex-direction: column;
+        padding: 12px 18px;
+        gap: 18px;
+    }
+
+    .story img {
+        width: 80%;
+        max-width: 480px;
+        margin-top: 8px;
+    }
+
+    .story div { width: 100%; padding: 18px; }
+}
